@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script type="text/javascript" src="css/overlaypopup.js"> </script>
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/skeleton.css">
+<link rel="stylesheet" href="css/overlaypopup.css" />
+<link rel="stylesheet" href="css/custom.css">
+<link rel="stylesheet" href="css/nu_main.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo {
+  width: 100%;
+  height: 846px;
+  object-fit: cover;
+  z-index: -100;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 150px;
+  height: 60px;
+  font-size: 15px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+</style>
+</head>
+<body>
+
+  <nav class="navbar" style="background-color:black;">
+    <div class="container nav_pad" style="background-color:black;" font-size:"20px">
+      <ul>
+        <center><li><a class="navbar-link" href="index.html">Main</a></li>
+        <li><a class="navbar-link" href="project1.html"> Project 1 </a></li>
+        <li><a class="navbar-link" href="project2.html"> Project 2</a></li>
+        <li><a class="navbar-link" href="project3.html">Project 3 </a></li>
+        <li><a class="navbar-link" href="artist.html">Artist Statement </a></li>
+        <li><a class="navbar-link" href="p4.html"> Info </a></li></center>
+      </ul>
+    </div>
+  </nav>
+
+<video autoplay muted loop id="myVideo">
+  <source src="pollution.mp4" type="video/mp4">
+</video>
+
+<div class="content">
+  <center><h1>Art 107</h1>
+  <p> Final Website</p>
+  <button id="myBtn" onclick="myFunction()">Pause</button></center>
+</div>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+</body>
+</html>

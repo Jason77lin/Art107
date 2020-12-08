@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Art 107</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="description" content="Hello, WebVR! • A-Frame" />
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <title>Jason's Project 2</title>
+
+  </head>
+
+  <body>
+
+    <font size="20" style= color:white;><center><b><h2>Jason's Project 2</h2></b><center></font><br><br>
+
+
+            <div class="text"
+
+          <p style= color:white;> <h4> This is my project 2 for Art 107. I've taken a turn on my original<br> idea because I've run into techincal difficulties with the fluid<br> animations in blender. Here we have a mix between worlds, both<br> space and earth. In this virtual reality space, contains the earth as<br> well as other planets in the Milky Way galaxy. As you explore the space,<br> you begin to notice that the earth is the only planet that is almost<br> submerged in contaminated waters. This is my take on bringing <br>awareness to pollution, as a way of saying our planet is slowly dying. </h4></p>
+          </div>
+
+    <a-scene
+      style="background-image: url('https://wallpaperaccess.com/full/1268171.jpg');"
+    >
+
+<a-entity camera="" position="3.02086 1.6 0" wasd-controls="" rotation="0 32.01172497175423 0" look-controls="" aframe-injected="" data-aframe-inspector-original-camera=""></a-entity>
+      <a-light
+        type="point"
+        color="white"
+        position="-8.79524 8.59081 -14.59738"
+        light="type: directional; intensity: 0.5; decay: 0"
+        scale="0.01 0.01 -0.019"
+        rotation="130 0 0"
+      ></a-light>
+      <a-light
+        type="point"
+        color="white"
+        position="4.52896 8.59081 -10.27678"
+        light="type: directional; intensity: 0.5; decay: 0"
+        scale="0.01 0.01 -0.019"
+        rotation="130 0 0"
+      ></a-light>
+<a-light type="point" color="white" position="10.10154 8.96712 -80.57802" light="type: directional; color: #f2f2f2; intensity: 0.5" scale="0.01 0.01 -0.019" rotation="45 0 0"></a-light>
+      <a-light
+        type="point"
+        color="white"
+        position="-0.85416 -4.01811 7.99463"
+        light="intensity: 0.25"
+        scale="0.005 0.005 0.005"
+        rotation="45 0 0"
+      ></a-light>
+
+      <a-light
+        type="point"
+        color="white"
+        position="-1.42973 7.67845 -22.70172"
+        light="type: hemisphere; intensity: 2"
+        scale="100 100 100"
+        rotation=""
+      ></a-light>
+
+
+      <a-asset-item
+        src="https://cdn.glitch.com/e18babd6-1074-4a49-944d-bb71bbe8831e%2FMercury.glb?v=1604268224540"
+      >
+      </a-asset-item>
+
+      <a-entity
+        gltf-model="https://cdn.glitch.com/e18babd6-1074-4a49-944d-bb71bbe8831e%2FMercury.glb?v=1604268224540"
+        position="-15.57928 0.93609 -15.63191"
+        radius="0.5"
+        height="1.5"
+        color="#FFC65D"
+        shadow=""
+        material="color: #ff5c5c"
+        geometry="depth: 1.92; height: 0"
+        scale="0.075 0.075 0.05"
+        rotation="0 -13.64 0"
+        id="Mercury"
+      >
+      </a-entity>
+
+      <a-asset-item
+        src="https://cdn.glitch.com/e18babd6-1074-4a49-944d-bb71bbe8831e%2FMercury.glb?v=1604268224540"
+      >
+      </a-asset-item>
+
+      <a-entity
+        gltf-model="https://cdn.glitch.com/e18babd6-1074-4a49-944d-bb71bbe8831e%2FVenus.glb?v=1604270321167"
+        position="9.34607 1.4627 -8.88839"
+        radius="0.5"
+        height="1.5"
+        color="#FFC65D"
+        shadow=""
+        material="color: #ff5c5c"
+        geometry="depth: 1.92; height: 0"
+        scale="0.075 0.075 0.075"
+        rotation="0 -13.64 0"
+        id="Venus"
+      >
+      </a-entity>
+
+      <a-asset-item
+        src="https://cdn.glitch.com/e18babd6-1074-4a49-944d-bb71bbe8831e%2FEarth.glb?v=1604270321731"
+      >
+      </a-asset-item>
+
+      <a-entity
+        gltf-model="https://cdn.glitch.com/e18babd6-1074-4a49-944d-bb71bbe8831e%2FEarth.glb?v=1604270321731"
+        position="0.35333 -11.45118 -25.41454"
+        radius="0.5"
+        height="1.5"
+        color="#FFC65D"
+        shadow=""
+        material="color: #ff5c5c"
+        geometry="depth: 1.92; height: 0"
+        scale="0.4 0.4 0.4"
+        rotation="9.73 -33.24 -0.67"
+        id="Earth"
+        visible=""
+      >
+      </a-entity>
+
+      <a-asset-item
+        src="https://cdn.glitch.com/e18babd6-1074-4a49-944d-bb71bbe8831e%2FMars.glb?v=1604270320629"
+      >
+      </a-asset-item>
+
+      <a-entity
+        gltf-model="https://cdn.glitch.com/e18babd6-1074-4a49-944d-bb71bbe8831e%2FMars.glb?v=1604270320629"
+        position="-16.58026 1.4627 10.70122"
+        radius="0.5"
+        height="1.5"
+        color="#FFC65D"
+        shadow=""
+        material="color: #ff5c5c"
+        geometry="depth: 1.92; height: 0"
+        scale="0.075 0.075 0.075"
+        rotation="0 -13.64 0"
+        id="Mars"
+      >
+      </a-entity>
+
+      <a-asset-item
+        src="https://cdn.glitch.com/e18babd6-1074-4a49-944d-bb71bbe8831e%2FJupiter.glb?v=1604270320672"
+      >
+      </a-asset-item>
+
+      <a-entity
+        gltf-model="https://cdn.glitch.com/e18babd6-1074-4a49-944d-bb71bbe8831e%2FJupiter.glb?v=1604270320672"
+        position="-13.98091 -1.21858 62.98268"
+        radius="0.5"
+        height="1.5"
+        color="#FFC65D"
+        shadow=""
+        material="color: #ff5c5c"
+        geometry="depth: 1.92; height: 0"
+        scale="0.3 0.3 0.3"
+        rotation="0 -13.64 0"
+        id="Jupiter"
+      >
+      </a-entity>
+
+      <a-asset-item
+        src="https://cdn.glitch.com/e18babd6-1074-4a49-944d-bb71bbe8831e%2FSaturn.glb?v=1604270320163"
+      >
+      </a-asset-item>
+
+      <a-entity
+        gltf-model="https://cdn.glitch.com/e18babd6-1074-4a49-944d-bb71bbe8831e%2FSaturn.glb?v=1604270320163"
+        position="26.41315 1.4627 56.5358"
+        radius="0.5"
+        height="1.5"
+        color="#FFC65D"
+        shadow=""
+        material="color: #ff5c5c"
+        geometry="depth: 1.92; height: 0"
+        scale="0.25 0.25 0.25"
+        rotation="0 -13.64 0"
+        id="Saturn"
+      >
+      </a-entity>
+
+      <a-asset-item
+        src="https://cdn.glitch.com/e18babd6-1074-4a49-944d-bb71bbe8831e%2FUranus.glb?v=1604270320009"
+      >
+      </a-asset-item>
+
+      <a-entity
+        gltf-model="https://cdn.glitch.com/e18babd6-1074-4a49-944d-bb71bbe8831e%2FUranus.glb?v=1604270320009"
+        position="6.41215 1.4627 88.03673"
+        radius="0.5"
+        height="1.5"
+        color="#FFC65D"
+        shadow=""
+        material="color: #ff5c5c"
+        geometry="depth: 1.92; height: 0"
+        scale="0.1 0.1 0.1"
+        rotation="0 -13.64 0"
+        id="Uranus"
+      >
+      </a-entity>
+
+      <a-asset-item
+        src="https://cdn.glitch.com/e18babd6-1074-4a49-944d-bb71bbe8831e%2FNeptune.glb?v=1604271267166"
+      >
+      </a-asset-item>
+
+      <a-entity
+        gltf-model="https://cdn.glitch.com/e18babd6-1074-4a49-944d-bb71bbe8831e%2FNeptune.glb?v=1604271267166"
+        position="50.11751 1.4627 20.91377"
+        radius="0.5"
+        height="1.5"
+        color="#FFC65D"
+        shadow=""
+        material="color: #ff5c5c"
+        geometry="depth: 1.92; height: 0"
+        scale="0.15 0.15 0.15"
+        rotation="0 -13.64 0"
+        id="Neptune"
+      >
+      </a-entity>
+
+      <a-asset-item
+        src="https://cdn.glitch.com/e18babd6-1074-4a49-944d-bb71bbe8831e%2FWaste.glb?v=1604284649986"
+      >
+      </a-asset-item>
+
+      <a-entity
+        gltf-model="https://cdn.glitch.com/e18babd6-1074-4a49-944d-bb71bbe8831e%2FWaste.glb?v=1604284649986"
+        position="15.31032 -5.98563 2.71704"
+        radius="0.5"
+        height="1.5"
+        color="#FFC65D"
+        shadow=""
+        material="color: #ff5c5c"
+        geometry="depth: 1.92; height: 0"
+        scale="15 15 15"
+        rotation="90 0 0"
+        id="Oil"
+      >
+      </a-entity>
+
+      <a-asset-item
+        src="https://cdn.glitch.com/e18babd6-1074-4a49-944d-bb71bbe8831e%2FOilBarrel.glb?v=1604285443799"
+      >
+      </a-asset-item>
+
+      <a-entity
+        gltf-model="https://cdn.glitch.com/e18babd6-1074-4a49-944d-bb71bbe8831e%2FOilBarrel.glb?v=1604285443799"
+        position="-7.83133 -8.45433 -30.41373"
+        radius="0.5"
+        height="1.5"
+        color="#FFC65D"
+        shadow=""
+        material="color: #ff5c5c"
+        geometry="depth: 1.92; height: 0"
+        scale="5 5 5"
+        rotation="-48.860121895371215 94.20743954879535 49.10305600050668"
+        id="Oil Barrel"
+      >
+      </a-entity>
+
+
+    </a-scene>
+
+  </body>
+
+</html>
+
+
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>

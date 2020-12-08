@@ -1,0 +1,53 @@
+  <a-scene background="color:	#2C3539" top= 500px;>
+    <a-light
+      type="point"
+      color="white"
+      position="-1.56057 0.56437 -1.35451"
+      light="type: spot; angle: 15.08; intensity: 1.83"
+      scale="-2.565 -0.775 2.465"
+      rotation="-62.189984999089816 0 0"
+    ></a-light>
+    <a-light
+      type="point"
+      color="white"
+      position="0.85922 13.88166 8.72612"
+      light="type: directional; angle: 28.69"
+      scale="5 5 2.18001"
+      rotation="-62.189984999089816 0 0"
+      visible=""
+    ></a-light>
+
+    <a-asset-item
+      id="tree"
+      src="https://cdn.glitch.com/173de11e-6bfd-48ff-a258-0e3aef809f3c%2FArt%20107%20Project%203.glb?v=1606708865735"
+    >
+    </a-asset-item>
+    <a-entity
+      gltf-model="https://cdn.glitch.com/173de11e-6bfd-48ff-a258-0e3aef809f3c%2FArt%20107%20Project%203.glb?v=1606708865735"
+      position="-2.83375 -1.37674 -4.95463"
+      radius="0.5"
+      height="1.5"
+      color="#FFC65D"
+      shadow=""
+      material="color: #ff5c5c"
+      geometry="depth: 1.92; height: 0"
+      scale="0.075 0.075 0.075"
+      rotation="0 0.7322400621771921 0"
+    >
+    </a-entity>
+
+
+
+    <a-camera
+      camera=""
+      position="-1.27673 0.20244 1"
+      wasd-controls=""
+      rotation="2.01 0 0"
+      look-controls=""
+      aframe-injected=""
+      data-aframe-inspector-original-camera=""
+      scale="0.21 0.2 1.02"
+    ></a-camera>
+
+    <a-entity fog="color: #675f5f; density: 1000" scale="100 100 100"></a-entity>
+  </a-scene>

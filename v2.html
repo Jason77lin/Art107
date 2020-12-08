@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+<title><center>Smog-Filled Lands</center></title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.dropbtn {
+  background-color: Dodgerblue;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  width:160px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: Black;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: Orange;}
+
+
+.sidenav {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+
+}
+
+/* Side navigation links */
+.sidenav a {
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color on hover */
+.sidenav2 a:hover {
+  background-color: blue;
+  color: black;
+}
+
+/* Style the content */
+.content {
+  margin-left: 200px;
+  padding-left: 20px;
+}
+</style>
+</head>
+<body>
+
+  <a-scene
+        style="background-image: url('https://wallpaperaccess.com/full/1268171.jpg');"
+      >
+  <a-entity camera="" position="3.02086 1.6 0" wasd-controls="" rotation="0 32.01172497175423 0" look-controls="" aframe-injected="" data-aframe-inspector-original-camera=""></a-entity>
+        <a-light
+          type="point"
+          color="white"
+          position="-8.79524 8.59081 -14.59738"
+          light="type: directional; intensity: 0.5; decay: 0"
+          scale="0.01 0.01 -0.019"
+          rotation="130 0 0"
+        ></a-light>
+        <a-light
+          type="point"
+          color="white"
+          position="4.52896 8.59081 -10.27678"
+          light="type: directional; intensity: 0.5; decay: 0"
+          scale="0.01 0.01 -0.019"
+          rotation="130 0 0"
+        ></a-light>
+  <a-light type="point" color="white" position="10.10154 8.96712 -80.57802" light="type: directional; color: #f2f2f2; intensity: 0.5" scale="0.01 0.01 -0.019" rotation="45 0 0"></a-light>
+        <a-light
+          type="point"
+          color="white"
+          position="-0.85416 -4.01811 7.99463"
+          light="intensity: 0.25"
+          scale="0.005 0.005 0.005"
+          rotation="45 0 0"
+        ></a-light>
+
+        <a-light
+          type="point"
+          color="white"
+          position="-1.42973 7.67845 -22.70172"
+          light="type: hemisphere; intensity: 2"
+          scale="100 100 100"
+          rotation=""
+        ></a-light>
+        <!--       <a-plane
+          position="0 -3.13478 -4"
+          rotation="-90 0 0"
+          width="10"
+          height="10"
+          color="#7BC8A4"
+          shadow=""
+          material="color: #241e1e"
+          geometry=""
+          scale="2 2 2"
+        ></a-plane> -->
+
+        <a-asset-item
+          src="https://cdn.glitch.com/e18babd6-1074-4a49-944d-bb71bbe8831e%2FMercury.glb?v=1604268224540"
+        >
+        </a-asset-item>
+
+        <a-entity
+          gltf-model="https://cdn.glitch.com/e18babd6-1074-4a49-944d-bb71bbe8831e%2FMercury.glb?v=1604268224540"
+          position="-15.57928 0.93609 -15.63191"
+          radius="0.5"
+          height="1.5"
+          color="#FFC65D"
+          shadow=""
+          material="color: #ff5c5c"
+          geometry="depth: 1.92; height: 0"
+          scale="0.075 0.075 0.05"
+          rotation="0 -13.64 0"
+          id="Mercury"
+        >
+        </a-entity>
+
+        <a-asset-item
+          src="https://cdn.glitch.com/e18babd6-1074-4a49-944d-bb71bbe8831e%2FMercury.glb?v=1604268224540"
+        >
+        </a-asset-item>
+
+        <a-entity
+          gltf-model="https://cdn.glitch.com/e18babd6-1074-4a49-944d-bb71bbe8831e%2FVenus.glb?v=1604270321167"
+          position="9.34607 1.4627 -8.88839"
+          radius="0.5"
+          height="1.5"
+          color="#FFC65D"
+          shadow=""
+          material="color: #ff5c5c"
+          geometry="depth: 1.92; height: 0"
+          scale="0.075 0.075 0.075"
+          rotation="0 -13.64 0"
+          id="Venus"
+        >
+        </a-entity>
+
+        <a-asset-item
+          src="https://cdn.glitch.com/e18babd6-1074-4a49-944d-bb71bbe8831e%2FEarth.glb?v=1604270321731"
+        >
+        </a-asset-item>
+
+        <a-entity
+          gltf-model="https://cdn.glitch.com/e18babd6-1074-4a49-944d-bb71bbe8831e%2FEarth.glb?v=1604270321731"
+          position="0.35333 -11.45118 -25.41454"
+          radius="0.5"
+          height="1.5"
+          color="#FFC65D"
+          shadow=""
+          material="color: #ff5c5c"
+          geometry="depth: 1.92; height: 0"
+          scale="0.4 0.4 0.4"
+          rotation="9.73 -33.24 -0.67"
+          id="Earth"
+          visible=""
+        >
+        </a-entity>
+
+        <a-asset-item
+          src="https://cdn.glitch.com/e18babd6-1074-4a49-944d-bb71bbe8831e%2FMars.glb?v=1604270320629"
+        >
+        </a-asset-item>
+
+        <a-entity
+          gltf-model="https://cdn.glitch.com/e18babd6-1074-4a49-944d-bb71bbe8831e%2FMars.glb?v=1604270320629"
+          position="-16.58026 1.4627 10.70122"
+          radius="0.5"
+          height="1.5"
+          color="#FFC65D"
+          shadow=""
+          material="color: #ff5c5c"
+          geometry="depth: 1.92; height: 0"
+          scale="0.075 0.075 0.075"
+          rotation="0 -13.64 0"
+          id="Mars"
+        >
+        </a-entity>
+
+        <a-asset-item
+          src="https://cdn.glitch.com/e18babd6-1074-4a49-944d-bb71bbe8831e%2FJupiter.glb?v=1604270320672"
+        >
+        </a-asset-item>
+
+        <a-entity
+          gltf-model="https://cdn.glitch.com/e18babd6-1074-4a49-944d-bb71bbe8831e%2FJupiter.glb?v=1604270320672"
+          position="-13.98091 -1.21858 62.98268"
+          radius="0.5"
+          height="1.5"
+          color="#FFC65D"
+          shadow=""
+          material="color: #ff5c5c"
+          geometry="depth: 1.92; height: 0"
+          scale="0.3 0.3 0.3"
+          rotation="0 -13.64 0"
+          id="Jupiter"
+        >
+        </a-entity>
+
+        <a-asset-item
+          src="https://cdn.glitch.com/e18babd6-1074-4a49-944d-bb71bbe8831e%2FSaturn.glb?v=1604270320163"
+        >
+        </a-asset-item>
+
+        <a-entity
+          gltf-model="https://cdn.glitch.com/e18babd6-1074-4a49-944d-bb71bbe8831e%2FSaturn.glb?v=1604270320163"
+          position="26.41315 1.4627 56.5358"
+          radius="0.5"
+          height="1.5"
+          color="#FFC65D"
+          shadow=""
+          material="color: #ff5c5c"
+          geometry="depth: 1.92; height: 0"
+          scale="0.25 0.25 0.25"
+          rotation="0 -13.64 0"
+          id="Saturn"
+        >
+        </a-entity>
+
+        <a-asset-item
+          src="https://cdn.glitch.com/e18babd6-1074-4a49-944d-bb71bbe8831e%2FUranus.glb?v=1604270320009"
+        >
+        </a-asset-item>
+
+        <a-entity
+          gltf-model="https://cdn.glitch.com/e18babd6-1074-4a49-944d-bb71bbe8831e%2FUranus.glb?v=1604270320009"
+          position="6.41215 1.4627 88.03673"
+          radius="0.5"
+          height="1.5"
+          color="#FFC65D"
+          shadow=""
+          material="color: #ff5c5c"
+          geometry="depth: 1.92; height: 0"
+          scale="0.1 0.1 0.1"
+          rotation="0 -13.64 0"
+          id="Uranus"
+        >
+        </a-entity>
+
+        <a-asset-item
+          src="https://cdn.glitch.com/e18babd6-1074-4a49-944d-bb71bbe8831e%2FNeptune.glb?v=1604271267166"
+        >
+        </a-asset-item>
+
+        <a-entity
+          gltf-model="https://cdn.glitch.com/e18babd6-1074-4a49-944d-bb71bbe8831e%2FNeptune.glb?v=1604271267166"
+          position="50.11751 1.4627 20.91377"
+          radius="0.5"
+          height="1.5"
+          color="#FFC65D"
+          shadow=""
+          material="color: #ff5c5c"
+          geometry="depth: 1.92; height: 0"
+          scale="0.15 0.15 0.15"
+          rotation="0 -13.64 0"
+          id="Neptune"
+        >
+        </a-entity>
+
+        <a-asset-item
+          src="https://cdn.glitch.com/e18babd6-1074-4a49-944d-bb71bbe8831e%2FWaste.glb?v=1604284649986"
+        >
+        </a-asset-item>
+
+        <a-entity
+          gltf-model="https://cdn.glitch.com/e18babd6-1074-4a49-944d-bb71bbe8831e%2FWaste.glb?v=1604284649986"
+          position="15.31032 -5.98563 2.71704"
+          radius="0.5"
+          height="1.5"
+          color="#FFC65D"
+          shadow=""
+          material="color: #ff5c5c"
+          geometry="depth: 1.92; height: 0"
+          scale="15 15 15"
+          rotation="90 0 0"
+          id="Oil"
+        >
+        </a-entity>
+
+        <a-asset-item
+          src="https://cdn.glitch.com/e18babd6-1074-4a49-944d-bb71bbe8831e%2FOilBarrel.glb?v=1604285443799"
+        >
+        </a-asset-item>
+
+        <a-entity
+          gltf-model="https://cdn.glitch.com/e18babd6-1074-4a49-944d-bb71bbe8831e%2FOilBarrel.glb?v=1604285443799"
+          position="-7.83133 -8.45433 -30.41373"
+          radius="0.5"
+          height="1.5"
+          color="#FFC65D"
+          shadow=""
+          material="color: #ff5c5c"
+          geometry="depth: 1.92; height: 0"
+          scale="5 5 5"
+          rotation="-48.860121895371215 94.20743954879535 49.10305600050668"
+          id="Oil Barrel"
+        >
+        </a-entity>
+      </a-scene>
+
+
+<div class="sidenav">
+<br>
+
+      <div class="sidenav2">
+        <center><b>
+          <div class="dropdown">
+              <button class="dropbtn">Next Page</button>
+                  <div class="dropdown-content">
+          <a href="index.html" style="color:orange">Home</a>
+          <a href="project1.html" style="color:orange">Project 1</a>
+          <a href="project2.html" style="color:orange">Project 2</a>
+          <a href="project3.html" style="color:orange">Project 3</a>
+          <a href="artist.html" style="color:orange">Artist Statement</a>
+                  </div>
+          </div>
+        </b></center>
+      </div>
+
+      <a style="font-size:30px"><u><b><center><br>Project 2</center></b></u></a><br>
+
+        <div class="sidenav2">
+        <b>
+            <a href="project2.html" style="color:orange">Render</a>
+            <a href="p2.txt" style="color:orange">Code</a>
+          </b>
+        </div>
+</div>
+
+</body>
+</html>

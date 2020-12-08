@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+<title><center>Smog-Filled Lands</center></title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.dropbtn {
+  background-color: Dodgerblue;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  width:160px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: Black;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: Orange;}
+
+
+.sidenav {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+
+}
+
+/* Side navigation links */
+.sidenav a {
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color on hover */
+.sidenav2 a:hover {
+  background-color: blue;
+  color: black;
+}
+
+/* Style the content */
+.content {
+  margin-left: 200px;
+  padding-left: 20px;
+}
+</style>
+</head>
+<body>
+
+  <a-scene background="color:	#2C3539" top= 500px;>
+    <a-light
+      type="point"
+      color="white"
+      position="-1.56057 0.56437 -1.35451"
+      light="type: spot; angle: 15.08; intensity: 1.83"
+      scale="-2.565 -0.775 2.465"
+      rotation="-62.189984999089816 0 0"
+    ></a-light>
+    <a-light
+      type="point"
+      color="white"
+      position="0.85922 13.88166 8.72612"
+      light="type: directional; angle: 28.69"
+      scale="5 5 2.18001"
+      rotation="-62.189984999089816 0 0"
+      visible=""
+    ></a-light>
+
+    <a-asset-item
+      id="tree"
+      src="https://cdn.glitch.com/173de11e-6bfd-48ff-a258-0e3aef809f3c%2FArt%20107%20Project%203.glb?v=1606708865735"
+    >
+    </a-asset-item>
+    <a-entity
+      gltf-model="https://cdn.glitch.com/173de11e-6bfd-48ff-a258-0e3aef809f3c%2FArt%20107%20Project%203.glb?v=1606708865735"
+      position="-2.83375 -1.37674 -4.95463"
+      radius="0.5"
+      height="1.5"
+      color="#FFC65D"
+      shadow=""
+      material="color: #ff5c5c"
+      geometry="depth: 1.92; height: 0"
+      scale="0.075 0.075 0.075"
+      rotation="0 0.7322400621771921 0"
+    >
+    </a-entity>
+
+
+
+    <a-camera
+      camera=""
+      position="-1.27673 0.20244 1"
+      wasd-controls=""
+      rotation="2.01 0 0"
+      look-controls=""
+      aframe-injected=""
+      data-aframe-inspector-original-camera=""
+      scale="0.21 0.2 1.02"
+    ></a-camera>
+
+    <a-entity fog="color: #675f5f; density: 1000" scale="100 100 100"></a-entity>
+  </a-scene>
+
+
+<div class="sidenav">
+<br>
+
+      <div class="sidenav2">
+        <center><b>
+          <div class="dropdown">
+              <button class="dropbtn">Next Page</button>
+                  <div class="dropdown-content">
+          <a href="index.html" style="color:orange">Home</a>
+          <a href="project1.html" style="color:orange">Project 1</a>
+          <a href="project2.html" style="color:orange">Project 2</a>
+          <a href="project3.html" style="color:orange">Project 3</a>
+          <a href="artist.html" style="color:orange">Artist Statement</a>
+                  </div>
+          </div>
+        </b></center>
+      </div>
+
+      <a style="font-size:30px"><u><b><center><br>Project 3</center></b></u></a><br>
+        <a> This is my project three, and just like my first two projects I decided to stick with the same medium in order to portray a common theme. All of my projects in this class have shared a common theme of pollution, in which I've already covered the pollution of water, and land. This project brings awareness to air pollution and what the future may come to if air pollution continues at this rate. "Smog-Filled Lands" simulates a world filled with smog, where people are required to walk on the streets with gas masks because regular cloth masks aren't enough anymore. I created this to show people that these are conditions that no one should be living in, and it can be prevented, although it may not be our biggest priority of 2020. </a>
+
+        <div class="sidenav2">
+        <b>
+            <a href="project3.html" style="color:orange">Render</a>
+            <a href="p3.txt" style="color:orange">Code</a>
+          </b>
+        </div>
+</div>
+
+<div class="content">
+  <h2>Smog Filled Lands</h2>
+  <p>A full-height, fixed sidenav and content.</p>
+</div>
+
+</body>
+</html>
